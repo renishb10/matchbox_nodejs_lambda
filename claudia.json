@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "matchbox_nodejs_lambda-executor",
+    "name": "matchbox_nodejs_lambda",
+    "region": "us-west-2"
+  },
+  "api": {
+    "id": "nd4pg41el7"
+  }
+}
