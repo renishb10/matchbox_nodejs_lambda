@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const _ = require('lodash');
 
 // Custom dependencies
 const voiceModel = require('../../models/voice.model');
@@ -13,7 +12,7 @@ router.get('/', async (req, res, next) => {
     await voiceModel
       .find({})
       .then(voices => {
-        if (_.isEmpty(voices))
+        if (voices)
           return res
             .status(404)
             .send({ status: 'error', message: 'No voices found' });
